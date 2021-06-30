@@ -60,6 +60,8 @@ namespace DynamoParser
             }
             Cursor.Current = Cursors.Default;
             toolStripStatusLabel1.Text = "Candidates Loaded";
+            Thread.Sleep(1);
+            toolStripStatusLabel1.Text = "Refreshing tree view and sorting candidates";
             InvokeSort();
         }
 
@@ -111,8 +113,9 @@ namespace DynamoParser
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Reloading Candidates";
             ExecuteLoadList();
         }
 
@@ -129,7 +132,10 @@ namespace DynamoParser
             if (treeView1.InvokeRequired)
                 treeView1.Invoke(new Action(InvokeSort));
             else
+            {
                 treeView1.Sort();
+                toolStripStatusLabel1.Text = "Ready";
+            }
         }
 
         private void Form1_Shown(object sender, EventArgs e)
