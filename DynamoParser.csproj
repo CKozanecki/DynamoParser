@@ -5,6 +5,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Candidate Log Parser</AssemblyName>
+    <ApplicationIcon>logs.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
