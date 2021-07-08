@@ -17,4 +17,9 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Docs\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
