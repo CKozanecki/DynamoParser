@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Docs\" />
+    <Folder Include="docs\" />
     <Folder Include="Properties\" />
   </ItemGroup>
 
