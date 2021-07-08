@@ -9,10 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="CandidateParsingInfo.json">
+    <None Update="LogFiles\CandidateParsingInfo.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ZEngineParsingInfo.json">
+    <None Update="LogFiles\ZEngineParsingInfo.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
